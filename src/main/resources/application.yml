@@ -1,0 +1,22 @@
+## YAML Template.
+---
+vendor: Gopinath
+spring:
+  application:
+    name: SAML demo
+
+#server:
+#  port: 9999
+
+keycloak:
+    saml-idp-url: https://sso-sso-demo.apps.fwalkersso.lab.upshift.rdu2.redhat.com/auth/realms/Demo-sso/protocol/saml/descriptor
+    entity-id: spring-boot-sso
+    jks-key-file: classpath:/keystore.jks
+    key-alias: spring-boot-sso
+    private-key-password: keycloak
+    store-password: keycloak
+    truststore-password: admin12345
+    truststore: /etc/sso-secret-volume/truststore.jks
+    ssl-required: external
+
+
