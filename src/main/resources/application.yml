@@ -15,8 +15,8 @@ keycloak:
     key-alias: spring-boot-sso
     private-key-password: keycloak
     store-password: keycloak
-    truststore-password: admin12345
-    truststore: /etc/sso-secret-volume/truststore.jks
-    ssl-required: external
+   # truststore-password: admin12345
+   #truststore: /etc/sso-secret-volume/truststore.jks
+   #ssl-required: external
 
 
